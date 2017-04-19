@@ -1,0 +1,2281 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/appcelerator/alloy#readme"
+
+    >alloy (v1.9.11)</a>
+</h1>
+<h4>Appcelerator Titanium MVC Framework</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.alloy">module alloy</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>alloy</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">alloy.</span>deepclean</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">alloy.</span>logger</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">alloy.</span>tiapp</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">alloy.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.alloy.alloy">module alloy.alloy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.alloy.init">
+            function <span class="apidocSignatureSpan">alloy.alloy.</span>init
+            <span class="apidocSignatureSpan">(logger, config, cli, appc)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">alloy.alloy.</span>cliVersion</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">alloy.alloy.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.alloy.deepclean">module alloy.deepclean</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.deepclean.init">
+            function <span class="apidocSignatureSpan">alloy.deepclean.</span>init
+            <span class="apidocSignatureSpan">(logger, config, cli, appc)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">alloy.deepclean.</span>cliVersion</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.alloy.logger">module alloy.logger</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">alloy.logger.</span>showTimestamp</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">alloy.logger.</span>stripColors</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.logger.debug">
+            function <span class="apidocSignatureSpan">alloy.logger.</span>debug
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.logger.error">
+            function <span class="apidocSignatureSpan">alloy.logger.</span>error
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.logger.info">
+            function <span class="apidocSignatureSpan">alloy.logger.</span>info
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.logger.trace">
+            function <span class="apidocSignatureSpan">alloy.logger.</span>trace
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.logger.warn">
+            function <span class="apidocSignatureSpan">alloy.logger.</span>warn
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">alloy.logger.</span>DEBUG</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">alloy.logger.</span>ERROR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">alloy.logger.</span>INFO</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">alloy.logger.</span>NONE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">alloy.logger.</span>TRACE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">alloy.logger.</span>WARN</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">alloy.logger.</span>logLevel</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.alloy.tiapp">module alloy.tiapp</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.tiapp.getDeploymentTargets">
+            function <span class="apidocSignatureSpan">alloy.tiapp.</span>getDeploymentTargets
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.tiapp.getProperty">
+            function <span class="apidocSignatureSpan">alloy.tiapp.</span>getProperty
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.tiapp.getSdkVersion">
+            function <span class="apidocSignatureSpan">alloy.tiapp.</span>getSdkVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.tiapp.init">
+            function <span class="apidocSignatureSpan">alloy.tiapp.</span>init
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.tiapp.installModule">
+            function <span class="apidocSignatureSpan">alloy.tiapp.</span>installModule
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.tiapp.installPlugin">
+            function <span class="apidocSignatureSpan">alloy.tiapp.</span>installPlugin
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.tiapp.parse">
+            function <span class="apidocSignatureSpan">alloy.tiapp.</span>parse
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.tiapp.validateSdkVersion">
+            function <span class="apidocSignatureSpan">alloy.tiapp.</span>validateSdkVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">alloy.tiapp.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.alloy.utils">module alloy.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.changeTime">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>changeTime
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.copyFileSync">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>copyFileSync
+            <span class="apidocSignatureSpan">(srcFile, destFile)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.createDate">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>createDate
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.createErrorOutput">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>createErrorOutput
+            <span class="apidocSignatureSpan">(msg, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.createHash">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>createHash
+            <span class="apidocSignatureSpan">(files)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.createHashFromString">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>createHashFromString
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.die">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>die
+            <span class="apidocSignatureSpan">(msg, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.dieWithNode">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>dieWithNode
+            <span class="apidocSignatureSpan">(node, msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.ensureDir">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>ensureDir
+            <span class="apidocSignatureSpan">(p)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.evaluateTemplate">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>evaluateTemplate
+            <span class="apidocSignatureSpan">(name, o)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.getAndValidateProjectPaths">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>getAndValidateProjectPaths
+            <span class="apidocSignatureSpan">(argPath, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.getDeploymentTargets">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>getDeploymentTargets
+            <span class="apidocSignatureSpan">(projDir)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.getWidgetDirectories">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>getWidgetDirectories
+            <span class="apidocSignatureSpan">(appDir)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.installPlugin">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>installPlugin
+            <span class="apidocSignatureSpan">(alloyPath, projectPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.isLocaleAlias">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>isLocaleAlias
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.isValidDate">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>isValidDate
+            <span class="apidocSignatureSpan">(d, dateField)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.lcfirst">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>lcfirst
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.normalizeReturns">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>normalizeReturns
+            <span class="apidocSignatureSpan">(s)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.properCase">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>properCase
+            <span class="apidocSignatureSpan">(n)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.proxyPropertyNameFromFullname">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>proxyPropertyNameFromFullname
+            <span class="apidocSignatureSpan">(fullname)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.readTemplate">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>readTemplate
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.resolveAppHome">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>resolveAppHome
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.rmdirContents">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>rmdirContents
+            <span class="apidocSignatureSpan">(dir, exceptions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.stripColors">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>stripColors
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.trim">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>trim
+            <span class="apidocSignatureSpan">(line)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.ucfirst">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>ucfirst
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.alloy.utils.updateFiles">
+            function <span class="apidocSignatureSpan">alloy.utils.</span>updateFiles
+            <span class="apidocSignatureSpan">(srcDir, dstDir, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">alloy.utils.</span>XML</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.alloy" id="apidoc.module.alloy">module alloy</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.alloy.alloy" id="apidoc.module.alloy.alloy">module alloy.alloy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.alloy.init" id="apidoc.element.alloy.alloy.init">
+        function <span class="apidocSignatureSpan">alloy.alloy.</span>init
+        <span class="apidocSignatureSpan">(logger, config, cli, appc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function (logger, config, cli, appc) {
+	var path = require(&#x27;path&#x27;),
+		fs = require(&#x27;fs&#x27;),
+		afs = appc.fs,
+		i18n = appc.i18n(__dirname),
+		__ = i18n.__,
+		__n = i18n.__n,
+		pkginfo = appc.pkginfo.package(module),
+		exec = require(&#x27;child_process&#x27;).exec,
+		spawn = require(&#x27;child_process&#x27;).spawn,
+		parallel = appc.async.parallel;
+
+	if (!process.env.sdk) {
+		process.env.sdk = cli.sdk.name;
+	}
+
+	function run(deviceFamily, deployType, target, finished, silent) {
+		var appDir = path.join(cli.argv[&#x27;project-dir&#x27;], &#x27;app&#x27;);
+		if (!afs.exists(appDir)) {
+			logger.info(__(&#x27;Project not an Alloy app, continuing&#x27;));
+			finished();
+			return;
+		}
+		logger.info(__(&#x27;Found Alloy app in %s&#x27;, appDir.cyan));
+
+		// TODO: Make this check specific to a TiSDK version
+		// create a .alloynewcli file to tell old plugins not to run
+		var buildDir = path.join(cli.argv[&#x27;project-dir&#x27;], &#x27;build&#x27;);
+		if (!afs.exists(buildDir)) {
+			fs.mkdirSync(buildDir);
+		}
+		fs.writeFileSync(path.join(buildDir, &#x27;.alloynewcli&#x27;), &#x27;&#x27;);
+
+		var cRequire = afs.resolvePath(__dirname, &#x27;..&#x27;, &#x27;Alloy&#x27;, &#x27;commands&#x27;, &#x27;compile&#x27;, &#x27;index.js&#x27;),
+			config = {
+				platform: /(?:iphone|ipad)/.test(cli.argv.platform) ? &#x27;ios&#x27; : cli.argv.platform,
+				version: &#x27;0&#x27;,
+				simtype: &#x27;none&#x27;,
+				devicefamily: /(?:iphone|ios)/.test(cli.argv.platform) ? deviceFamily : &#x27;none&#x27;,
+				deploytype: deployType || cli.argv[&#x27;deploy-type&#x27;] || &#x27;development&#x27;,
+				target: target
+			};
+		if (silent) {
+			// turn off all logging output for code analyzer build hook
+			config.noBanner = &#x27;true&#x27;;
+			config.logLevel = &#x27;-1&#x27;;
+		}
+
+		config = Object.keys(config).map(function (c) {
+			return c + &#x27;=&#x27; + config[c];
+		}).join(&#x27;,&#x27;);
+
+		if (afs.exists(cRequire)) {
+			// we&#x27;re being invoked from the actual alloy directory!
+			// no need to subprocess, just require() and run
+			var origLimit = Error.stackTraceLimit;
+			Error.stackTraceLimit = Infinity;
+			try {
+				require(cRequire)({}, {
+					config: config,
+					outputPath: cli.argv[&#x27;project-dir&#x27;],
+					_version: pkginfo.version
+				});
+			} catch (e) {
+				logger.error(__(&#x27;Alloy compiler failed&#x27;));
+				e.toString().split(&#x27;\n&#x27;).forEach(function (line) {
+					if (line) { logger.error(line); }
+				});
+				process.exit(1);
+			}
+			Error.stackTraceLimit = origLimit;
+			finished();
+		} else {
+			// we have no clue where alloy is installed, so we&#x27;re going to subprocess
+			// alloy and hope it&#x27;s in the system path or a well known place
+			var paths = {};
+			var locatorCmd = process.platform === &#x27;win32&#x27; ? &#x27;where&#x27; : &#x27;which&#x27;;
+			parallel(this, [&#x27;alloy&#x27;, &#x27;node&#x27;].map(function (bin) {
+				return function (done) {
+					var envName = &#x27;ALLOY_&#x27; + (bin === &#x27;node&#x27; ? &#x27;NODE_&#x27; : &#x27;&#x27;) + &#x27;PATH&#x27;;
+
+					paths[bin] = process.env[envName];
+					if (paths[bin]) {
+						done();
+					} else if (process.platform === &#x27;win32&#x27; &#x26;&#x26; bin === &#x27;alloy&#x27;) {
+						paths.alloy = &#x27;alloy.cmd&#x27;;
+						done();
+					} else {
+						exec(locatorCmd + &#x27; &#x27; + bin, function (err, stdout, strerr) {
+							if (!err) {
+								paths[bin] = stdout.trim();
+								done();
+							} else {
+								parallel(this, [
+									&#x27;/usr/local/bin/&#x27; + bin,
+									&#x27;/opt/local/bin/&#x27; + bin,
+									path.join(process.env.HOME, &#x27;local/bin&#x27;, bin),
+									&#x27;/opt/bin/&#x27; + bin,
+									&#x27;/usr/bin/&#x27; + bin
+								].map(function (p) {
+									return function (cb) {
+										if (afs.exists(p)) { paths[bin] = p; }
+										cb();
+									};
+								}), done);
+							}
+						});
+					}
+				};
+			}), function () {
+
+				// compose alloy command execution
+				var cmd = [paths.node, paths.alloy, &#x27;compile&#x27;, appDir, &#x27;--config&#x27;, config];
+				if (cli.argv[&#x27;no-colors&#x27;] || cli.argv[&#x27;color&#x27;] === false) { cmd.push(&#x27;--no-colors&#x27;); }
+
+				// process each line of output from alloy
+				function checkLine(line) {
+					var re = new RegExp(
+						&#x27;^(?:\u001b\\[\\d+m)?\\[?(&#x27; +
+						logger.getLevels().join(&#x27;|&#x27;) +
+						&#x27;)\\]?\s*(?:\u001b\\[\\d+m)?(.*)&#x27;, &#x27;i&#x27;
+					);
+					if (line) {
+						var m = line.match(re);
+						if (m) {
+							logger[m[1].toLowerCase()](m[2].trim());
+						} else {
+							logger.debug(line);
+						}
+					}
+				}
+
+				// execute alloy in os-specific manner ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		exports.ensureDir(o.dest);
+		exports.copyFileSync(srcFile, destFile);
+
+		logger.info(&#x27;Deployed ti.alloy &#x27; + type + &#x27; to &#x27; + destFile);
+	});
+
+	// add the plugin to tiapp.xml, if necessary
+	tiapp.<span class="apidocCodeKeywordSpan">init</span>(path.join(projectPath, &#x27;tiapp.xml&#x27;));
+	tiapp.installPlugin({
+		id: &#x27;ti.alloy&#x27;,
+		version: &#x27;1.0&#x27;
+	});
+};
+
+exports.normalizeReturns = function(s) {
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.alloy.deepclean" id="apidoc.module.alloy.deepclean">module alloy.deepclean</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.deepclean.init" id="apidoc.element.alloy.deepclean.init">
+        function <span class="apidocSignatureSpan">alloy.deepclean.</span>init
+        <span class="apidocSignatureSpan">(logger, config, cli, appc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function (logger, config, cli, appc) {
+	var path = require(&#x27;path&#x27;),
+		fs = require(&#x27;fs&#x27;),
+		afs = appc.fs;
+
+	function run(finished) {
+		if (cli.argv[&#x27;shallow&#x27;] === &#x27;&#x27;) {
+			logger.info(&#x27;Not cleaning the Resources directory&#x27;);
+			finished();
+			return;
+		}
+		var appDir = path.join(cli.argv[&#x27;project-dir&#x27;], &#x27;app&#x27;);
+		if (!afs.exists(appDir)) {
+			logger.debug(&#x27;Project not an Alloy app, exiting.&#x27;);
+			finished();
+			return;
+		}
+
+		var resourcesDir = path.join(cli.argv[&#x27;project-dir&#x27;], &#x27;Resources&#x27;);
+		if (!afs.exists(resourcesDir)) {
+			logger.debug(&#x27;Resources directory does not exist.&#x27;);
+			finished();
+			return;
+		}
+		rmdir(resourcesDir, fs, path, logger);
+		logger.debug(&#x27;Resources directory of %s has been emptied&#x27;, appDir.cyan);
+		finished();
+	}
+
+	cli.addHook(&#x27;clean.post&#x27;, function (build, finished) {
+		run(finished);
+	});
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		exports.ensureDir(o.dest);
+		exports.copyFileSync(srcFile, destFile);
+
+		logger.info(&#x27;Deployed ti.alloy &#x27; + type + &#x27; to &#x27; + destFile);
+	});
+
+	// add the plugin to tiapp.xml, if necessary
+	tiapp.<span class="apidocCodeKeywordSpan">init</span>(path.join(projectPath, &#x27;tiapp.xml&#x27;));
+	tiapp.installPlugin({
+		id: &#x27;ti.alloy&#x27;,
+		version: &#x27;1.0&#x27;
+	});
+};
+
+exports.normalizeReturns = function(s) {
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.alloy.logger" id="apidoc.module.alloy.logger">module alloy.logger</a></h1>
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.logger.debug" id="apidoc.element.alloy.logger.debug">
+        function <span class="apidocSignatureSpan">alloy.logger.</span>debug
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">debug = function (msg) {
+	if (exports.logLevel &#x3e;= exports.DEBUG) { printMessage(msg, &#x27;debug&#x27;, &#x27;cyan&#x27;); }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+						&#x27;)\\]?\s*(?:\u001b\\[\\d+m)?(.*)&#x27;, &#x27;i&#x27;
+					);
+					if (line) {
+						var m = line.match(re);
+						if (m) {
+							logger[m[1].toLowerCase()](m[2].trim());
+						} else {
+							logger.<span class="apidocCodeKeywordSpan">debug</span>(line);
+						}
+					}
+				}
+
+				// execute alloy in os-specific manner
+				var child;
+				if (process.platform === &#x27;win32&#x27; &#x26;&#x26; paths.alloy === &#x27;alloy.cmd&#x27;) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.logger.error" id="apidoc.element.alloy.logger.error">
+        function <span class="apidocSignatureSpan">alloy.logger.</span>error
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">error = function (msg) {
+	if (exports.logLevel &#x3e;= exports.ERROR) { printMessage(msg, &#x27;error&#x27;, &#x27;red&#x27;); }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// make sure the target TiSDK version meets the minimum for Alloy
+tiapp.validateSdkVersion = function() {
+	var tiVersion = tiapp.getSdkVersion();
+	if (tiVersion === null) {
+		logger.warn(&#x27;Unable to determine Titanium SDK version from tiapp.xml.&#x27;);
+		logger.warn(&#x27;Your app may have unexpected behavior. Make sure your tiapp.xml is valid.&#x27;);
+	} else if (tiapp.version.lt(tiVersion, CONST.MINIMUM_TI_SDK)) {
+		logger.<span class="apidocCodeKeywordSpan">error</span>(&#x27;Alloy &#x27; + pkg.version + &#x27; requires Titanium SDK &#x27; +
+			CONST.MINIMUM_TI_SDK + &#x27; or higher.&#x27;);
+		logger.error(&#x27;&#x22;&#x27; + tiVersion + &#x27;&#x22; was found in the &#x22;sdk-version&#x22; field of your tiapp.xml.&#
+x27;);
+		logger.error(&#x27;If you are building with the legacy titanium.py script and are specifying &#x27;);
+		logger.error(&#x27;an SDK version as a CLI argument that is different than the one in your &#x27;);
+		logger.error(&#x27;tiapp.xml, please change the version in your tiapp.xml file.&#x27;);
+		process.exit(1);
+	}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.logger.info" id="apidoc.element.alloy.logger.info">
+        function <span class="apidocSignatureSpan">alloy.logger.</span>info
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">info = function (msg) {
+	if (exports.logLevel &#x3e;= exports.INFO) { printMessage(msg, &#x27;info&#x27;, &#x27;white&#x27;); }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		pna.appendChild(doc.createTextNode(&#x27;\n&#x27;));
+
+		// serialize the xml and write to tiapp.xml
+		var serializer = new XMLSerializer();
+		var newxml = serializer.serializeToString(doc);
+		fs.writeFileSync(tiappFile, newxml, &#x27;utf8&#x27;);
+
+		logger.<span class="apidocCodeKeywordSpan">info</span>(&#x27;Installed &#x22;&#x27; + opts.id + &#x27;&#x22; &#x27; + type + &#
+x27; to &#x27; + tiappFile);
+	}
+
+}
+
+module.exports = tiapp;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.logger.trace" id="apidoc.element.alloy.logger.trace">
+        function <span class="apidocSignatureSpan">alloy.logger.</span>trace
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">trace = function (msg) {
+	if (exports.logLevel &#x3e;= exports.TRACE) { printMessage(msg, &#x27;trace&#x27;, &#x27;grey&#x27;); }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	opts = opts || {};
+	opts.rootDir = opts.rootDir || dstDir;
+	var copiedFiles = [];
+
+	if (!fs.existsSync(srcDir)) {
+		return;
+	}
+	logger.<span class="apidocCodeKeywordSpan">trace</span>(&#x27;SRC_DIR=&#x27; + srcDir);
+
+	if (!fs.existsSync(dstDir)) {
+		wrench.mkdirSyncRecursive(dstDir, 0755);
+	}
+
+	// don&#x27;t process XML/controller files inside .svn folders (ALOY-839)
+	var excludeRegex = new RegExp(&#x27;(?:^|[\\/\\\\])(?:&#x27; + CONST.EXCLUDED_FILES.join(&#x27;|&#x27;) + &#x27;)(?:$|[\\/\\\\])&#
+x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.logger.warn" id="apidoc.element.alloy.logger.warn">
+        function <span class="apidocSignatureSpan">alloy.logger.</span>warn
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">warn = function (msg) {
+	if (exports.logLevel &#x3e;= exports.WARN) { printMessage(msg, &#x27;warn&#x27;, &#x27;yellow&#x27;); }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	install(&#x27;plugin&#x27;, opts);
+};
+
+// make sure the target TiSDK version meets the minimum for Alloy
+tiapp.validateSdkVersion = function() {
+	var tiVersion = tiapp.getSdkVersion();
+	if (tiVersion === null) {
+		logger.<span class="apidocCodeKeywordSpan">warn</span>(&#x27;Unable to determine Titanium SDK version from tiapp.xml.&#x27;);
+		logger.warn(&#x27;Your app may have unexpected behavior. Make sure your tiapp.xml is valid.&#x27;);
+	} else if (tiapp.version.lt(tiVersion, CONST.MINIMUM_TI_SDK)) {
+		logger.error(&#x27;Alloy &#x27; + pkg.version + &#x27; requires Titanium SDK &#x27; +
+			CONST.MINIMUM_TI_SDK + &#x27; or higher.&#x27;);
+		logger.error(&#x27;&#x22;&#x27; + tiVersion + &#x27;&#x22; was found in the &#x22;sdk-version&#x22; field of your tiapp.xml.&#
+x27;);
+		logger.error(&#x27;If you are building with the legacy titanium.py script and are specifying &#x27;);
+		logger.error(&#x27;an SDK version as a CLI argument that is different than the one in your &#x27;);
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.alloy.tiapp" id="apidoc.module.alloy.tiapp">module alloy.tiapp</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.tiapp.getDeploymentTargets" id="apidoc.element.alloy.tiapp.getDeploymentTargets">
+        function <span class="apidocSignatureSpan">alloy.tiapp.</span>getDeploymentTargets
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDeploymentTargets = function () {
+	var deployment = doc.documentElement.getElementsByTagName(&#x27;deployment-targets&#x27;),
+		results = [];
+
+	if (deployment.length &#x3e; 0) {
+		var targets = deployment.item(0).getElementsByTagName(&#x27;target&#x27;);
+		for (var i = 0, j = targets.length; i &#x3c; j; i++) {
+			var target = targets.item(i);
+			if (U.XML.getNodeText(target) === &#x27;true&#x27;) {
+				var platform = target.getAttribute(&#x27;device&#x27;);
+				if (platform === &#x27;iphone&#x27; || platform === &#x27;ipad&#x27;) {
+					platform = &#x27;ios&#x27;;
+				}
+
+				if (results.indexOf(platform) === -1) {
+					results.push(platform);
+				}
+			}
+		}
+	}
+	return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+exports.getDeploymentTargets = function(projDir) {
+	var tiappPath = path.join(projDir, &#x27;tiapp.xml&#x27;),
+		tiappDoc,
+		targets;
+
+	if (fs.existsSync(tiappPath)) {
+		tiapp.init(tiappPath);
+		targets = tiapp.<span class="apidocCodeKeywordSpan">getDeploymentTargets</span>().join(&#x27;,&#x27;);
+	} else {
+		targets = CONST.PLATFORMS.join(&#x27;,&#x27;);
+	}
+
+	return targets;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.tiapp.getProperty" id="apidoc.element.alloy.tiapp.getProperty">
+        function <span class="apidocSignatureSpan">alloy.tiapp.</span>getProperty
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getProperty = function (name) {
+	var props = doc.documentElement.getElementsByTagName(&#x27;property&#x27;);
+	for (var i = 0; i &#x3c; props.length; i++) {
+		if (props.item(i).getAttribute(&#x27;name&#x27;) === name) {
+			return props.item(i);
+		}
+	}
+	return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.tiapp.getSdkVersion" id="apidoc.element.alloy.tiapp.getSdkVersion">
+        function <span class="apidocSignatureSpan">alloy.tiapp.</span>getSdkVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSdkVersion = function () {
+	var elems = doc.documentElement.getElementsByTagName(&#x27;sdk-version&#x27;);
+	if (elems &#x26;&#x26; elems.length &#x3e; 0) {
+		return U.XML.getNodeText(elems.item(elems.length - 1));
+	} else {
+		if (process.env.sdk) {
+			return process.env.sdk;
+		} else {
+			return getSdkSelectVersion();
+		}
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// Add a plugin to the tiapp.xml
+tiapp.installPlugin = function(opts) {
+	install(&#x27;plugin&#x27;, opts);
+};
+
+// make sure the target TiSDK version meets the minimum for Alloy
+tiapp.validateSdkVersion = function() {
+	var tiVersion = tiapp.<span class="apidocCodeKeywordSpan">getSdkVersion</span>();
+	if (tiVersion === null) {
+		logger.warn(&#x27;Unable to determine Titanium SDK version from tiapp.xml.&#x27;);
+		logger.warn(&#x27;Your app may have unexpected behavior. Make sure your tiapp.xml is valid.&#x27;);
+	} else if (tiapp.version.lt(tiVersion, CONST.MINIMUM_TI_SDK)) {
+		logger.error(&#x27;Alloy &#x27; + pkg.version + &#x27; requires Titanium SDK &#x27; +
+			CONST.MINIMUM_TI_SDK + &#x27; or higher.&#x27;);
+		logger.error(&#x27;&#x22;&#x27; + tiVersion + &#x27;&#x22; was found in the &#x22;sdk-version&#x22; field of your tiapp.xml.&#
+x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.tiapp.init" id="apidoc.element.alloy.tiapp.init">
+        function <span class="apidocSignatureSpan">alloy.tiapp.</span>init
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function (file) {
+	tiappFile = file || DEFAULT_TIAPP;
+	doc = tiapp.parse(tiappFile);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		exports.ensureDir(o.dest);
+		exports.copyFileSync(srcFile, destFile);
+
+		logger.info(&#x27;Deployed ti.alloy &#x27; + type + &#x27; to &#x27; + destFile);
+	});
+
+	// add the plugin to tiapp.xml, if necessary
+	tiapp.<span class="apidocCodeKeywordSpan">init</span>(path.join(projectPath, &#x27;tiapp.xml&#x27;));
+	tiapp.installPlugin({
+		id: &#x27;ti.alloy&#x27;,
+		version: &#x27;1.0&#x27;
+	});
+};
+
+exports.normalizeReturns = function(s) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.tiapp.installModule" id="apidoc.element.alloy.tiapp.installModule">
+        function <span class="apidocSignatureSpan">alloy.tiapp.</span>installModule
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">installModule = function (opts) {
+	install(&#x27;module&#x27;, opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.tiapp.installPlugin" id="apidoc.element.alloy.tiapp.installPlugin">
+        function <span class="apidocSignatureSpan">alloy.tiapp.</span>installPlugin
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">installPlugin = function (opts) {
+	install(&#x27;plugin&#x27;, opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		exports.copyFileSync(srcFile, destFile);
+
+		logger.info(&#x27;Deployed ti.alloy &#x27; + type + &#x27; to &#x27; + destFile);
+	});
+
+	// add the plugin to tiapp.xml, if necessary
+	tiapp.init(path.join(projectPath, &#x27;tiapp.xml&#x27;));
+	tiapp.<span class="apidocCodeKeywordSpan">installPlugin</span>({
+		id: &#x27;ti.alloy&#x27;,
+		version: &#x27;1.0&#x27;
+	});
+};
+
+exports.normalizeReturns = function(s) {
+	return s.replace(/\r\n/g, &#x27;\n&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.tiapp.parse" id="apidoc.element.alloy.tiapp.parse">
+        function <span class="apidocSignatureSpan">alloy.tiapp.</span>parse
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (file) {
+	file = file || tiappFile;
+	if (!fs.existsSync(file)) {
+		U.die(&#x27;tiapp.xml file does not exist at &#x22;&#x27; + file + &#x27;&#x22;&#x27;);
+	}
+	return U.XML.parseFromFile(file);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var tiapp = {},
+	tiappFile, doc;
+
+// initialize the project folder
+tiapp.init = function(file) {
+	tiappFile = file || DEFAULT_TIAPP;
+	doc = tiapp.<span class="apidocCodeKeywordSpan">parse</span>(tiappFile);
+};
+
+// Return an XML document object representing the tiapp.xml file
+tiapp.parse = function(file) {
+	file = file || tiappFile;
+	if (!fs.existsSync(file)) {
+		U.die(&#x27;tiapp.xml file does not exist at &#x22;&#x27; + file + &#x27;&#x22;&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.tiapp.validateSdkVersion" id="apidoc.element.alloy.tiapp.validateSdkVersion">
+        function <span class="apidocSignatureSpan">alloy.tiapp.</span>validateSdkVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateSdkVersion = function () {
+	var tiVersion = tiapp.getSdkVersion();
+	if (tiVersion === null) {
+		logger.warn(&#x27;Unable to determine Titanium SDK version from tiapp.xml.&#x27;);
+		logger.warn(&#x27;Your app may have unexpected behavior. Make sure your tiapp.xml is valid.&#x27;);
+	} else if (tiapp.version.lt(tiVersion, CONST.MINIMUM_TI_SDK)) {
+		logger.error(&#x27;Alloy &#x27; + pkg.version + &#x27; requires Titanium SDK &#x27; +
+			CONST.MINIMUM_TI_SDK + &#x27; or higher.&#x27;);
+		logger.error(&#x27;&#x22;&#x27; + tiVersion + &#x27;&#x22; was found in the &#x22;sdk-version&#x22; field of your tiapp.xml.&#x27;);
+		logger.error(&#x27;If you are building with the legacy titanium.py script and are specifying &#x27;);
+		logger.error(&#x27;an SDK version as a CLI argument that is different than the one in your &#x27;);
+		logger.error(&#x27;tiapp.xml, please change the version in your tiapp.xml file.&#x27;);
+		process.exit(1);
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.alloy.utils" id="apidoc.module.alloy.utils">module alloy.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.changeTime" id="apidoc.element.alloy.utils.changeTime">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>changeTime
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">changeTime = function (file) {
+	if (!fs.existsSync(file)) { return -1; }
+	var stat = fs.statSync(file);
+	return Math.max(stat.mtime.getTime(), stat.ctime.getTime());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.copyFileSync" id="apidoc.element.alloy.utils.copyFileSync">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>copyFileSync
+        <span class="apidocSignatureSpan">(srcFile, destFile)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">copyFileSync = function (srcFile, destFile) {
+	var BUF_LENGTH = 64 * 1024,
+		buff,
+		bytesRead,
+		fdr,
+		fdw,
+		pos;
+	buff = new Buffer(BUF_LENGTH);
+	fdr = fs.openSync(srcFile, &#x27;r&#x27;);
+	exports.ensureDir(path.dirname(destFile));
+	fdw = fs.openSync(destFile, &#x27;w&#x27;);
+	bytesRead = 1;
+	pos = 0;
+	while (bytesRead &#x3e; 0) {
+		bytesRead = fs.readSync(fdr, buff, 0, BUF_LENGTH, pos);
+		fs.writeSync(fdw, buff, 0, bytesRead);
+		pos += bytesRead;
+	}
+	fs.closeSync(fdr);
+	return fs.closeSync(fdw);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+				// copy file in if it is a JS file or if its mtime is
+				// greater than the one in Resources
+				if (path.extname(src) === &#x27;.js&#x27; || opts.themeChanged || opts.isNew ||
+					srcStat.mtime.getTime() &#x3e; dstStat.mtime.getTime()) {
+					logger.trace(&#x27;Copying &#x27; +
+						path.join(&#x27;SRC_DIR&#x27;, path.relative(srcDir, src)).yellow + &#x27; --&#x3e; &#x27; +
+						path.relative(opts.rootDir, dst).yellow);
+					exports.<span class="apidocCodeKeywordSpan">copyFileSync</span>(src, dst);
+					copiedFiles.push(path.relative(path.join(opts.rootDir, &#x27;Resources&#x27;), dst));
+				}
+			}
+		} else {
+			if (srcStat.isDirectory()) {
+				logger.trace(&#x27;Creating directory &#x27; + path.relative(opts.rootDir, dst).yellow);
+				wrench.mkdirSyncRecursive(dst, 0755);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.createDate" id="apidoc.element.alloy.utils.createDate">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>createDate
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createDate = function (val) {
+	return require(&#x27;moment&#x27;)(val).toDate();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.createErrorOutput" id="apidoc.element.alloy.utils.createErrorOutput">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>createErrorOutput
+        <span class="apidocSignatureSpan">(msg, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createErrorOutput = function (msg, e) {
+	var errs = [msg || &#x27;An unknown error occurred&#x27;];
+	var posArray = [];
+
+	if (e) {
+		var line = e.line || e.lineNumber;
+		if (e.message) { errs.push(e.message.split(&#x27;\n&#x27;)); }
+		if (line)  { posArray.push(&#x27;line &#x27; + line); }
+		if (e.col) { posArray.push(&#x27;column &#x27; + e.col); }
+		if (e.pos) { posArray.push(&#x27;position &#x27; + e.pos); }
+		if (posArray.length) { errs.push(posArray.join(&#x27;, &#x27;)); }
+
+		// add the stack trace if we don&#x27;t get anything good
+		if (errs.length &#x3c; 2) { errs.unshift(e.stack); }
+	} else {
+		errs.unshift(e.stack);
+	}
+
+	return errs;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	if (!fs.existsSync(p)) {
+		wrench.mkdirSyncRecursive(p, 0755);
+	}
+};
+
+exports.die = function(msg, e) {
+	if (e) {
+		logger.error(exports.<span class="apidocCodeKeywordSpan">createErrorOutput</span>(msg, e));
+	} else {
+		logger.error(msg);
+	}
+	process.exit(1);
+};
+
+exports.dieWithNode = function(node, msg) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.createHash" id="apidoc.element.alloy.utils.createHash">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>createHash
+        <span class="apidocSignatureSpan">(files)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createHash = function (files) {
+	if (_.isString(files)) {
+		files = [files];
+	} else if (!_.isArray(files)) {
+		throw new TypeError(&#x27;bad argument&#x27;);
+	}
+
+	var source = &#x27;&#x27;;
+	_.each(files, function(f) {
+		source += util.format(&#x27;%s\n%s\n&#x27;, f, fs.existsSync(f) ? fs.readFileSync(f, &#x27;utf8&#x27;) : &#x27;&#x27;);
+	});
+
+	return crypto.createHash(&#x27;md5&#x27;).update(source).digest(&#x27;hex&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	}
+
+	var source = &#x27;&#x27;;
+	_.each(files, function(f) {
+		source += util.format(&#x27;%s\n%s\n&#x27;, f, fs.existsSync(f) ? fs.readFileSync(f, &#x27;utf8&#x27;) : &#x27;&#x27;);
+	});
+
+	return crypto.<span class="apidocCodeKeywordSpan">createHash</span>(&#x27;md5&#x27;).update(source).digest(&#x27;hex&#x27;);
+};
+
+exports.createHashFromString = function(string) {
+	if (!_.isString(string)) {
+		throw new TypeError(&#x27;bad argument&#x27;);
+	}
+	return crypto.createHash(&#x27;md5&#x27;).update(string).digest(&#x27;hex&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.createHashFromString" id="apidoc.element.alloy.utils.createHashFromString">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>createHashFromString
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createHashFromString = function (string) {
+	if (!_.isString(string)) {
+		throw new TypeError(&#x27;bad argument&#x27;);
+	}
+	return crypto.createHash(&#x27;md5&#x27;).update(string).digest(&#x27;hex&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.die" id="apidoc.element.alloy.utils.die">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>die
+        <span class="apidocSignatureSpan">(msg, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">die = function (msg, e) {
+	if (e) {
+		logger.error(exports.createErrorOutput(msg, e));
+	} else {
+		logger.error(msg);
+	}
+	process.exit(1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	doc = tiapp.parse(tiappFile);
+};
+
+// Return an XML document object representing the tiapp.xml file
+tiapp.parse = function(file) {
+	file = file || tiappFile;
+	if (!fs.existsSync(file)) {
+		U.<span class="apidocCodeKeywordSpan">die</span>(&#x27;tiapp.xml file does not exist at &#x22;&#x27; + file + &#x27;&#x22;&#x27
+;);
+	}
+	return U.XML.parseFromFile(file);
+};
+
+// Get the Titanium SDK version as a string
+// Get the Titanium SDK version as a string
+tiapp.getSdkVersion = function() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.dieWithNode" id="apidoc.element.alloy.utils.dieWithNode">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>dieWithNode
+        <span class="apidocSignatureSpan">(node, msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dieWithNode = function (node, msg) {
+	msg = _.isArray(msg) ? msg : [msg];
+	msg.unshift(&#x27;Error with &#x3c;&#x27; + node.nodeName + &#x27;&#x3e; at line &#x27; + node.lineNumber);
+	exports.die(msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.ensureDir" id="apidoc.element.alloy.utils.ensureDir">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>ensureDir
+        <span class="apidocSignatureSpan">(p)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ensureDir = function (p) {
+	if (!fs.existsSync(p)) {
+		wrench.mkdirSyncRecursive(p, 0755);
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		buff,
+		bytesRead,
+		fdr,
+		fdw,
+		pos;
+	buff = new Buffer(BUF_LENGTH);
+	fdr = fs.openSync(srcFile, &#x27;r&#x27;);
+	exports.<span class="apidocCodeKeywordSpan">ensureDir</span>(path.dirname(destFile));
+	fdw = fs.openSync(destFile, &#x27;w&#x27;);
+	bytesRead = 1;
+	pos = 0;
+	while (bytesRead &#x3e; 0) {
+		bytesRead = fs.readSync(fdr, buff, 0, BUF_LENGTH, pos);
+		fs.writeSync(fdw, buff, 0, bytesRead);
+		pos += bytesRead;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.evaluateTemplate" id="apidoc.element.alloy.utils.evaluateTemplate">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>evaluateTemplate
+        <span class="apidocSignatureSpan">(name, o)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">evaluateTemplate = function (name, o) {
+	return _.template(exports.readTemplate(name), o);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.getAndValidateProjectPaths" id="apidoc.element.alloy.utils.getAndValidateProjectPaths">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>getAndValidateProjectPaths
+        <span class="apidocSignatureSpan">(argPath, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAndValidateProjectPaths = function (argPath, opts) {
+	opts = opts || {};
+	var projectPath = path.resolve(argPath);
+
+	// See if we got the &#x22;app&#x22; path or the project path as an argument
+	projectPath = fs.existsSync(path.join(projectPath, &#x27;..&#x27;, &#x27;tiapp.xml&#x27;)) ?
+		path.join(projectPath, &#x27;..&#x27;) : projectPath;
+
+	// Assign paths objects
+	var paths = {
+		project: projectPath,
+		app: path.join(projectPath, &#x27;app&#x27;),
+		indexBase: path.join(CONST.DIR.CONTROLLER, CONST.NAME_DEFAULT + &#x27;.&#x27; + CONST.FILE_EXT.CONTROLLER)
+	};
+	paths.index = path.join(paths.app, paths.indexBase);
+	paths.assets = path.join(paths.app, &#x27;assets&#x27;);
+	paths.resources = path.join(paths.project, &#x27;Resources&#x27;);
+	paths.resourcesAlloy = path.join(paths.resources, &#x27;alloy&#x27;);
+
+	// validate project and &#x22;app&#x22; paths
+	if (!fs.existsSync(paths.project)) {
+		exports.die(&#x27;Titanium project path does not exist at &#x22;&#x27; + paths.project + &#x27;&#x22;.&#x27;);
+	} else if (!fs.existsSync(path.join(paths.project, &#x27;tiapp.xml&#x27;))) {
+		exports.die(&#x27;Invalid Titanium project path (no tiapp.xml) at &#x22;&#x27; + paths.project + &#x27;&#x22;&#x27;);
+	} else if (!fs.existsSync(paths.app)) {
+		exports.die(&#x27;Alloy &#x22;app&#x22; directory does not exist at &#x22;&#x27; + paths.app + &#x27;&#x22;&#x27;);
+	} else if (!fs.existsSync(paths.index) &#x26;&#x26; (opts.command !== CONST.COMMANDS.GENERATE)) {
+		exports.die(&#x27;Alloy &#x22;app&#x22; directory has no &#x22;&#x27; + paths.indexBase + &#x27;&#x22; file at &#x22;&#x27; + paths.index + &#x27;&#x22;.&#x27;);
+	}
+
+	// TODO: https://jira.appcelerator.org/browse/TIMOB-14683
+	// Resources/app.js must be present, even if not used
+	var appjs = path.join(paths.resources, &#x27;app.js&#x27;);
+	if (!fs.existsSync(appjs)) {
+		wrench.mkdirSyncRecursive(paths.resources, 0755);
+		fs.writeFileSync(appjs, &#x27;&#x27;);
+	}
+
+	return paths;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.getDeploymentTargets" id="apidoc.element.alloy.utils.getDeploymentTargets">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>getDeploymentTargets
+        <span class="apidocSignatureSpan">(projDir)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDeploymentTargets = function (projDir) {
+	var tiappPath = path.join(projDir, &#x27;tiapp.xml&#x27;),
+		tiappDoc,
+		targets;
+
+	if (fs.existsSync(tiappPath)) {
+		tiapp.init(tiappPath);
+		targets = tiapp.getDeploymentTargets().join(&#x27;,&#x27;);
+	} else {
+		targets = CONST.PLATFORMS.join(&#x27;,&#x27;);
+	}
+
+	return targets;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+exports.getDeploymentTargets = function(projDir) {
+	var tiappPath = path.join(projDir, &#x27;tiapp.xml&#x27;),
+		tiappDoc,
+		targets;
+
+	if (fs.existsSync(tiappPath)) {
+		tiapp.init(tiappPath);
+		targets = tiapp.<span class="apidocCodeKeywordSpan">getDeploymentTargets</span>().join(&#x27;,&#x27;);
+	} else {
+		targets = CONST.PLATFORMS.join(&#x27;,&#x27;);
+	}
+
+	return targets;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.getWidgetDirectories" id="apidoc.element.alloy.utils.getWidgetDirectories">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>getWidgetDirectories
+        <span class="apidocSignatureSpan">(appDir)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getWidgetDirectories = function (appDir) {
+	var configPath = path.join(appDir, &#x27;config.json&#x27;);
+	var appWidgets = [];
+	if (fs.existsSync(configPath)) {
+		try {
+			var content = fs.readFileSync(configPath, &#x27;utf8&#x27;);
+			appWidgets = jsonlint.parse(content).dependencies;
+		} catch (e) {
+			exports.die(&#x27;Error parsing &#x22;config.json&#x22;&#x27;, e);
+		}
+	}
+
+	var dirs = [];
+	var collections = [];
+	var widgetPaths = [];
+	widgetPaths.push(path.join(__dirname, &#x27;..&#x27;, &#x27;widgets&#x27;));
+	widgetPaths.push(path.join(appDir, &#x27;widgets&#x27;));
+
+	_.each(widgetPaths, function(widgetPath) {
+		if (fs.existsSync(widgetPath)) {
+			var wFiles = fs.readdirSync(widgetPath);
+			for (var i = 0; i &#x3c; wFiles.length; i++) {
+				var wDir = path.join(widgetPath, wFiles[i]);
+				if (fs.statSync(wDir).isDirectory() &#x26;&#x26;
+					_.indexOf(fs.readdirSync(wDir), &#x27;widget.json&#x27;) !== -1) {
+					var collection = parseManifestAsCollection(path.join(wDir, &#x27;widget.json&#x27;));
+					collections[collection.manifest.id] = collection;
+				}
+			}
+		}
+	});
+
+	function parseManifestAsCollection(wFile) {
+		var wDir = path.dirname(wFile);
+		var manifest;
+		try {
+			manifest = jsonlint.parse(fs.readFileSync(wFile, &#x27;utf8&#x27;));
+		} catch (e) {
+			exports.die(&#x27;Error parsing &#x22;&#x27; + wFile + &#x27;&#x22;&#x27;, e);
+		}
+
+		return {
+			dir: wDir,
+			manifest: manifest
+		};
+	}
+
+	function findWidgetAsNodeModule(id) {
+		var wFile;
+		try {
+			wFile = resolve.sync(path.join(CONST.NPM_WIDGET_PREFIX + id, &#x27;widget&#x27;), { basedir: path.join(appDir, &#x27;..&#x27;), extensions: [ &#x27;.json
+&#x27; ], paths: paths() });
+		} catch (err) {
+			return;
+		}
+
+		var collection = parseManifestAsCollection(wFile);
+		if (collection.manifest.id !== id) {
+			return logger.warn(&#x27;Expected &#x22;&#x27; + wFile + &#x27;&#x22; to have id &#x22;&#x27; + id + &#x27;&#x22; instead of &#x22;&#x27; + collection.manifest.id + &#x27;&#x22;&#x27;);
+		}
+
+		var pFile = path.join(path.dirname(wFile), &#x27;package.json&#x27;);
+		var pkg;
+		try {
+			pkg = jsonlint.parse(fs.readFileSync(pFile, &#x27;utf8&#x27;));
+		} catch (e) {
+			exports.die(&#x27;Error parsing &#x22;&#x27; + pFile + &#x27;&#x22;&#x27;, e);
+		}
+
+		var missingKeywords = _.difference(CONST.NPM_WIDGET_KEYWORDS, pkg.keywords || []);
+		if (missingKeywords.length &#x3e; 0) {
+			return logger.warn(&#x27;Expected &#x22;&#x27; + pFile + &#x27;&#x22; to have missing keywords &#x22;&#x27; + missingKeywords.join(&#x27;&#x22;, &#x22;&#x27;) + &#x27;&#x22;&#x27;);
+		}
+
+		return collection;
+	}
+
+	function walkWidgetDependencies(id) {
+		var collection = collections[id];
+
+		if (!collection) {
+			collection = findWidgetAsNodeModule(id);
+
+			if (!collection) {
+				notFound.push(id);
+				return;
+			}
+		}
+
+		dirs.push(collection);
+		for (var dependency in collection.manifest.dependencies) {
+			walkWidgetDependencies(dependency);
+		}
+	}
+
+	// walk the dependencies, tracking any missing widgets
+	var notFound = [];
+	for (var id in appWidgets) {
+		walkWidgetDependencies(id);
+	}
+
+	// if there are missing widgets, abort and tell the developer which ones
+	if (!!notFound.length) { // eslint-disable-line no-extra-boolean-cast
+		exports.die([
+			&#x27;config.json references non-existent widgets: &#x27; + JSON.stringify(notFound),
+			&#x27;If you are not using these widgets, remove them from your config.json dependencies.&#x27;,
+			&#x27;If you are using them, add them to your project\&#x27;s widget folder or as NPM package.&#x27;
+		]);
+	}
+
+	return dirs;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.installPlugin" id="apidoc.element.alloy.utils.installPlugin">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>installPlugin
+        <span class="apidocSignatureSpan">(alloyPath, projectPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">installPlugin = function (alloyPath, projectPath) {
+	var id = &#x27;ti.alloy&#x27;;
+	var plugins = {
+		plugin: {
+			file: CONST.PLUGIN_FILE,
+			src: path.join(alloyPath, &#x27;Alloy&#x27;, &#x27;plugin&#x27;),
+			dest: path.join(projectPath, &#x27;plugins&#x27;, id)
+		},
+		hook: {
+			file: CONST.HOOK_FILE,
+			src: path.join(alloyPath, &#x27;hooks&#x27;),
+			dest: path.join(projectPath, &#x27;plugins&#x27;, id, &#x27;hooks&#x27;)
+		},
+		cleanhook: {
+			file: CONST.HOOK_FILE_CLEAN,
+			src: path.join(alloyPath, &#x27;hooks&#x27;),
+			dest: path.join(projectPath, &#x27;plugins&#x27;, id, &#x27;hooks&#x27;)
+		}
+	};
+
+	_.each(plugins, function(o, type) {
+		var srcFile = path.join(o.src, o.file);
+		var destFile = path.join(o.dest, o.file);
+
+		// skip if the src and dest are the same file
+		if (fs.existsSync(destFile) &#x26;&#x26;
+			fs.readFileSync(srcFile, &#x27;utf8&#x27;) === fs.readFileSync(destFile, &#x27;utf8&#x27;)) {
+			return;
+		}
+		exports.ensureDir(o.dest);
+		exports.copyFileSync(srcFile, destFile);
+
+		logger.info(&#x27;Deployed ti.alloy &#x27; + type + &#x27; to &#x27; + destFile);
+	});
+
+	// add the plugin to tiapp.xml, if necessary
+	tiapp.init(path.join(projectPath, &#x27;tiapp.xml&#x27;));
+	tiapp.installPlugin({
+		id: &#x27;ti.alloy&#x27;,
+		version: &#x27;1.0&#x27;
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		exports.copyFileSync(srcFile, destFile);
+
+		logger.info(&#x27;Deployed ti.alloy &#x27; + type + &#x27; to &#x27; + destFile);
+	});
+
+	// add the plugin to tiapp.xml, if necessary
+	tiapp.init(path.join(projectPath, &#x27;tiapp.xml&#x27;));
+	tiapp.<span class="apidocCodeKeywordSpan">installPlugin</span>({
+		id: &#x27;ti.alloy&#x27;,
+		version: &#x27;1.0&#x27;
+	});
+};
+
+exports.normalizeReturns = function(s) {
+	return s.replace(/\r\n/g, &#x27;\n&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.isLocaleAlias" id="apidoc.element.alloy.utils.isLocaleAlias">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>isLocaleAlias
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isLocaleAlias = function (string) {
+	return /^\s*L\(([&#x27;\&#x22;])(.+)\1\)\s*$/.test(string);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.isValidDate" id="apidoc.element.alloy.utils.isValidDate">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>isValidDate
+        <span class="apidocSignatureSpan">(d, dateField)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isValidDate = function (d, dateField) {
+	// not using _.isDate() because it accepts some invalid date strings
+	if (!require(&#x27;moment&#x27;)(d).isValid()) {
+		exports.die(&#x27;Invalid date string. &#x27; + dateField + &#x22; must be a string that can be parsed by MomentJS&#x27;s `moment()` constructor.&#x22;);
+	} else {
+		return true;
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.lcfirst" id="apidoc.element.alloy.utils.lcfirst">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>lcfirst
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lcfirst = function (text) {
+	if (!text)
+		return text;
+	return text[0].toLowerCase() + text.substr(1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		throw new TypeError(&#x27;bad argument&#x27;);
+	}
+	return crypto.createHash(&#x27;md5&#x27;).update(string).digest(&#x27;hex&#x27;);
+};
+
+exports.proxyPropertyNameFromFullname = function(fullname) {
+	var nameParts = fullname.split(&#x27;.&#x27;);
+	return exports.<span class="apidocCodeKeywordSpan">lcfirst</span>(nameParts[nameParts.length - 1]);
+};
+
+/*
+Two date-related functions for ALOY-263
+	- used by compile/parsers/Ti.UI.Picker.js and compile/styler.js
+*/
+exports.isValidDate = function(d, dateField) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.normalizeReturns" id="apidoc.element.alloy.utils.normalizeReturns">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>normalizeReturns
+        <span class="apidocSignatureSpan">(s)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">normalizeReturns = function (s) {
+	return s.replace(/\r\n/g, &#x27;\n&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.properCase" id="apidoc.element.alloy.utils.properCase">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>properCase
+        <span class="apidocSignatureSpan">(n)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">properCase = function (n) {
+	return n.charAt(0).toUpperCase() + n.substring(1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.proxyPropertyNameFromFullname" id="apidoc.element.alloy.utils.proxyPropertyNameFromFullname">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>proxyPropertyNameFromFullname
+        <span class="apidocSignatureSpan">(fullname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">proxyPropertyNameFromFullname = function (fullname) {
+	var nameParts = fullname.split(&#x27;.&#x27;);
+	return exports.lcfirst(nameParts[nameParts.length - 1]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.readTemplate" id="apidoc.element.alloy.utils.readTemplate">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>readTemplate
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readTemplate = function (name) {
+	return fs.readFileSync(path.join(__dirname, &#x27;template&#x27;, name), &#x27;utf8&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+exports.readTemplate = function(name) {
+	return fs.readFileSync(path.join(__dirname, &#x27;template&#x27;, name), &#x27;utf8&#x27;);
+};
+
+exports.evaluateTemplate = function(name, o) {
+	return _.template(exports.<span class="apidocCodeKeywordSpan">readTemplate</span>(name), o);
+};
+
+exports.getAndValidateProjectPaths = function(argPath, opts) {
+	opts = opts || {};
+	var projectPath = path.resolve(argPath);
+
+	// See if we got the &#x22;app&#x22; path or the project path as an argument
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.resolveAppHome" id="apidoc.element.alloy.utils.resolveAppHome">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>resolveAppHome
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">resolveAppHome = function () {
+	var indexView = path.join(CONST.DIR.VIEW, CONST.NAME_DEFAULT + &#x27;.&#x27; + CONST.FILE_EXT.VIEW);
+	var paths = [ path.join(&#x27;.&#x27;, &#x27;app&#x27;), path.join(&#x27;.&#x27;) ];
+
+	// Do we have an Alloy project? Find views/index.xml.
+	for (var i = 0; i &#x3c; paths.length; i++) {
+		paths[i] = path.resolve(paths[i]);
+		var testPath = path.join(paths[i], indexView);
+		if (fs.existsSync(testPath)) {
+			return paths[i];
+		}
+	}
+
+	// Report error, show the paths searched.
+	var errs = [ &#x27;No valid Alloy project found at the following paths (no &#x22;views/index.xml&#x22;):&#x27; ];
+	errs.push(paths);
+	exports.die(errs);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.rmdirContents" id="apidoc.element.alloy.utils.rmdirContents">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>rmdirContents
+        <span class="apidocSignatureSpan">(dir, exceptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rmdirContents = function (dir, exceptions) {
+	var files;
+	try {
+		files = fs.readdirSync(dir);
+	} catch (e) {
+		return;
+	}
+
+	for (var i = 0, l = files.length; i &#x3c; l; i++) {
+		var currFile = path.join(dir, files[i]);
+		var stat = fs.lstatSync(currFile);
+
+		// process the exceptions
+		var result = _.find(exceptions, function(exception) {
+			if (exception instanceof RegExp) {
+				return exception.test(files[i]);
+			} else {
+				return files[i] === exception;
+			}
+		});
+
+		// skip any exceptions
+		if (result) {
+			continue;
+		// use wrench to delete directories
+		} else if (stat.isDirectory()) {
+			wrench.rmdirSyncRecursive(currFile, true);
+		// unlink any files or links
+		} else {
+			fs.unlinkSync(currFile);
+		}
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.stripColors" id="apidoc.element.alloy.utils.stripColors">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>stripColors
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stripColors = function (str) {
+	return str.replace(/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]/g, &#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+			for (var i = 0; i &#x3c; line.length; i++) {
+				printLine(line[i]);
+			}
+		} else {
+			var tag = (exports.showTimestamp ? formattedDate() + &#x27; -- &#x27; : &#x27;&#x27;) + &#x27;[&#x27; +
+				level.toUpperCase() + &#x27;] &#x27;;
+			var str = tag.grey + (line || &#x27;&#x27;)[color];
+			if (exports.stripColors) { str = U.<span class="apidocCodeKeywordSpan">stripColors</span>(str); }
+			logFunc(str);
+		}
+	}
+	printLine(msg);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.trim" id="apidoc.element.alloy.utils.trim">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>trim
+        <span class="apidocSignatureSpan">(line)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">trim = function (line) {
+	return String(line).replace(/^\s\s*/, &#x27;&#x27;).replace(/\s\s*$/, &#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+						done();
+					} else if (process.platform === &#x27;win32&#x27; &#x26;&#x26; bin === &#x27;alloy&#x27;) {
+						paths.alloy = &#x27;alloy.cmd&#x27;;
+						done();
+					} else {
+						exec(locatorCmd + &#x27; &#x27; + bin, function (err, stdout, strerr) {
+							if (!err) {
+								paths[bin] = stdout.<span class="apidocCodeKeywordSpan">trim</span>();
+								done();
+							} else {
+								parallel(this, [
+									&#x27;/usr/local/bin/&#x27; + bin,
+									&#x27;/opt/local/bin/&#x27; + bin,
+									path.join(process.env.HOME, &#x27;local/bin&#x27;, bin),
+									&#x27;/opt/bin/&#x27; + bin,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.ucfirst" id="apidoc.element.alloy.utils.ucfirst">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>ucfirst
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ucfirst = function (text) {
+	if (!text)
+		return text;
+	return text[0].toUpperCase() + text.substr(1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.alloy.utils.updateFiles" id="apidoc.element.alloy.utils.updateFiles">
+        function <span class="apidocSignatureSpan">alloy.utils.</span>updateFiles
+        <span class="apidocSignatureSpan">(srcDir, dstDir, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">updateFiles = function (srcDir, dstDir, opts) {
+	opts = opts || {};
+	opts.rootDir = opts.rootDir || dstDir;
+	var copiedFiles = [];
+
+	if (!fs.existsSync(srcDir)) {
+		return;
+	}
+	logger.trace(&#x27;SRC_DIR=&#x27; + srcDir);
+
+	if (!fs.existsSync(dstDir)) {
+		wrench.mkdirSyncRecursive(dstDir, 0755);
+	}
+
+	// don&#x27;t process XML/controller files inside .svn folders (ALOY-839)
+	var excludeRegex = new RegExp(&#x27;(?:^|[\\/\\\\])(?:&#x27; + CONST.EXCLUDED_FILES.join(&#x27;|&#x27;) + &#x27;)(?:$|[\\/\\\\])&#x27;);
+	var ordered = [];
+	_.each(wrench.readdirSyncRecursive(srcDir), function(file) {
+		var src = path.join(srcDir, file);
+		var dst = path.join(dstDir, file);
+
+		if (excludeRegex.test(src)) {
+			return;
+		}
+
+		// make sure the file exists and that it is not filtered
+		if (!fs.existsSync(src) ||
+			(opts.filter &#x26;&#x26; opts.filter.test(file)) ||
+			(opts.exceptions &#x26;&#x26; _.contains(opts.exceptions, file)) ||
+			(opts.restrictionPath &#x26;&#x26; !_.contains(opts.restrictionPath, src)) ) {
+			return;
+		}
+
+		// if this is the current platform-specific folder, adjust the dst path
+		var parts = file.split(/[\/\\]/);
+		if (opts.titaniumFolder &#x26;&#x26; parts[0] === opts.titaniumFolder) {
+			if (opts.type &#x26;&#x26; opts.type !== &#x27;ASSETS&#x27; &#x26;&#x26; parts[0] === &#x27;iphone&#x27;) {
+				// don&#x27;t copy files in lib/iphone or vendor/iphone
+				return;
+			}
+			dst = path.join(dstDir, parts.slice(1).join(&#x27;/&#x27;));
+			ordered.push({ src:src, dst:dst });
+		} else if (opts.titaniumFolder &#x26;&#x26; opts.titaniumFolder === &#x27;iphone&#x27; &#x26;&#x26; opts.type &#x26;&#x26; opts.type !== &#x27;ASSETS&#x27; &#x26;&#x26; parts[0] === &#x27;ios
+&#x27;) {
+			// copy files in lib/ios and vendor/ios
+			dst = path.join(dstDir, parts.slice(1).join(&#x27;/&#x27;));
+			ordered.push({ src:src, dst:dst });
+		} else {
+			ordered.unshift({ src:src, dst:dst });
+		}
+	});
+
+	_.each(ordered, function(o) {
+		var src = o.src;
+		var dst = o.dst;
+		var srcStat = fs.statSync(src);
+		if (fs.existsSync(dst)) {
+			var dstStat = fs.statSync(dst);
+
+			if (!dstStat.isDirectory()) {
+				// copy file in if it is a JS file or if its mtime is
+				// greater than the one in Resources
+				if (path.extname(src) === &#x27;.js&#x27; || opts.themeChanged || opts.isNew ||
+					srcStat.mtime.getTime() &#x3e; dstStat.mtime.getTime()) {
+					logger.trace(&#x27;Copying &#x27; +
+						path.join(&#x27;SRC_DIR&#x27;, path.relative(srcDir, src)).yellow + &#x27; --&#x3e; &#x27; +
+						path.relative(opts.rootDir, dst).yellow);
+					exports.copyFileSync(src, dst);
+					copiedFiles.push(path.relative(path.join(opts.rootDir, &#x27;Resources&#x27;), dst));
+				}
+			}
+		} else {
+			if (srcStat.isDirectory()) {
+				logger.trace(&#x27;Creating directory &#x27; + path.relative(opts.rootDir, dst).yellow);
+				wrench.mkdirSyncRecursive(dst, 0755);
+			} else {
+				logger.trace(&#x27;Copying &#x27; + path.join(&#x27;SRC_DIR&#x27;, path.relative(srcDir, src)).yellow +
+					&#x27; --&#x3e; &#x27; + path.relative(opts.rootDir, dst).yellow);
+				exports.copyFileSync(src, dst);
+				copiedFiles.push(path.relative(path.join(opts.rootDir, &#x27;Resources&#x27;), dst));
+			}
+		}
+		if (!srcStat.isDirectory() &#x26;&#x26; opts.createSourceMap &#x26;&#x26; path.extname(src) === &#x27;.js&#x27;) {
+			var tpath = path.join(opts.rootDir, &#x27;build&#x27;, &#x27;map&#x27;, &#x27;Resources&#x27;, (opts.compileConfig.alloyConfig.platform === &#x27;ios&#x27; ? &#x27;iphone
+&#x27; : opts.compileConfig.alloyConfig.platform), &#x27;alloy&#x27;);
+			var target = {
+					filename: path.join(tpath, path.basename(src)),
+					filepath: path.dirname(dst),
+					template: dst
+				},
+				data = {
+					&#x27;__MAPMARKER_NONCONTROLLER__&#x27;: {
+						filename: src,
+						filepath: path.dirname(src),
+					}
+				};
+			sourceMapper.generateSourceMap({
+				target: target,
+				data: data,
+				origFile: {
+					filename: src,
+					filepath: path.dirname(src)
+				}
+			}, opts.compileConfig);
+		}
+	});
+	logger.trace(&#x27;&#x27;);
+
+	return copiedFiles;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
